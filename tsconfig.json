@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "target": "es2020",
+    "esModuleInterop": true,
+    "types": [
+      "node",
+      "reflect-metadata"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
