@@ -20,20 +20,24 @@
     "@oclif/core": "^1",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.0.1",
+    "colors": "^1.4.0",
     "inquirer": "^8.2.0",
     "openpgp": "^5.1.0",
     "reflect-metadata": "^0.1.13",
-    "validator": "^13.7.0"
+    "validator": "^13.7.0",
+    "winston": "^3.6.0"
   },
   "devDependencies": {
     "@oclif/test": "^2",
     "@types/chai": "^4",
+    "@types/colors": "^1.2.1",
     "@types/inquirer": "^8.2.0",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.9.4",
     "@types/openpgp": "^4.4.18",
     "@types/reflect-metadata": "^0.1.0",
     "@types/validator": "^13.7.1",
+    "@types/winston": "^2.4.4",
     "chai": "^4",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
@@ -71,8 +75,9 @@
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md",
     "watch": "tsc -w -p tsconfig.json",
-    "init": "node bin/dev repository init ./tmp",
-    "reset": "rm -rf ./tmp/.enbox"
+    "init": "node bin/dev init ./.vscode/tmp -e test@gmail.com",
+    "reset": "rm -rf ./.vscode/tmp",
+    "ls": "node bin/dev ls ./.vscode/tmp"
   },
   "engines": {
     "node": ">=17.3.0"

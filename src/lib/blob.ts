@@ -1,8 +1,8 @@
-import { createReadStream, createWriteStream, fstat, openSync } from 'node:fs'
+import { createReadStream, createWriteStream } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { basename } from 'node:path'
 // import { encrypt, getKeyFromPassword, getSalt } from "./Cryptor";
-import { Block } from './Block'
+import { Block } from './block'
 
 export class Blob {
   protected name?: string;
@@ -60,7 +60,7 @@ export class Blob {
 
     // let key = ''; //getKeyFromPassword(this.password!, this.salt!)
 
-    await new Promise<void>((resolve, reject) => {
+    await new Promise<void>((resolve) => {
       let rs = createReadStream(this.filename!, { highWaterMark: this.blockSize })
       rs.on('data', () => {
         const block: Block = new Block()
