@@ -22,7 +22,7 @@
     "@oclif/plugin-plugins": "^2.0.1",
     "colors": "^1.4.0",
     "inquirer": "^8.2.0",
-    "openpgp": "^5.1.0",
+    "openpgp": "^5.2.1",
     "reflect-metadata": "^0.1.13",
     "validator": "^13.7.0",
     "winston": "^3.6.0"
