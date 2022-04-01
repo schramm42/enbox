@@ -31,7 +31,7 @@
     "@oclif/test": "^2",
     "@types/chai": "^4",
     "@types/colors": "^1.2.1",
-    "@types/inquirer": "^8.2.0",
+    "@types/inquirer": "^8.2.1",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.9.4",
     "@types/openpgp": "^4.4.18",
