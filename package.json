@@ -21,7 +21,7 @@
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.0.1",
     "colors": "^1.4.0",
-    "inquirer": "^8.2.0",
+    "inquirer": "^8.2.4",
     "openpgp": "^5.1.0",
     "reflect-metadata": "^0.1.13",
     "validator": "^13.7.0",
